@@ -1,6 +1,6 @@
-# AIoT Baby Cry Monitor
+# Desarrollo de proyectos IoT que implementen IA/ML en dispositivos empotrados
 
-Este repositorio contiene todo el código y materiales asociados al proyecto de fin de grado “Desarrollo de proyectos IoT que implementen IA/ML en dispositivos empotrados” sobre ESP32-S3-Box 3.
+Este repositorio contiene todo el código y materiales asociados a este proyecto que implementa un sistema de detección de llanto de bebé sobre la  placa ESP32-S3-Box 3.
 
 ## Descripción general
 
