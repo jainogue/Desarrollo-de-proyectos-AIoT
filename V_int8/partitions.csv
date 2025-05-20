@@ -1,0 +1,4 @@
+# Name,Type,SubType,Offset,Size,
+nvs,data,nvs,36864,20480,
+otadata,data,ota,57344,8192,
+app,app,factory,65536,16711680,

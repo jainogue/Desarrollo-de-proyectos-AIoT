@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+dependencies:
+  idf:
+    version: '>=4.1.0'
+  espressif/esp-tflite-micro:
+    version: '*'
+  espressif/esp-box-3: ^2.0.0
+  espressif/button: '>=2,<4.0'
+  espressif/qrcode: ^0.1.0~2
