@@ -18,7 +18,7 @@ El sistema implementa un flujo completo de desarrollo AIoT:
 
 **Nota:** Las bases de datos de audio no están incluidas en este repositorio.
 
-## DIrectorios del proyecto
+## Directorios del proyecto
 
 - **general_notebooks/**: Notebooks para preprocesado, entrenamiento y evaluación de modelos.
 - **testing/**: Pruebas de inferencia y recopilación de métricas finales.
