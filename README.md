@@ -26,7 +26,7 @@ El sistema implementa un flujo completo de desarrollo AIoT:
   - `main/`: código fuente en ESP-IDF
   - `CMakeLists.txt` y `partitions.csv`
   - `sdkconfig.defaults`
-
+- **Results/**: Resultados obtenidos para cada modelo junto a las matrices de  confusión.
 ---
 
 ## Requisitos previos
@@ -78,4 +78,25 @@ El monitor mostrará logs de provisión Wi-Fi/BLE, inferencia, uso de RAM/PSRAM 
 
 ### testing/
 
-Notebooks y scripts para generar datos de prueba, comparar resultados y recopilar métricas finales (tiempo de inferencia, RAM/Flash, precisión).
+La carpeta `testing/` agrupa todos los recursos necesarios para validar los modelos y extraer las métricas de rendimiento finales. Su contenido se organiza así:
+
+- **audio_for_test/**
+  Audio utilzado para hacer las pruebas a los modelos junto al csv de "ground-truth" donde cada fragmento del audio está etiquetado.
+
+- **data/**
+  - `general_metrics.csv`
+    Tabla consolidada con las métricas finales de precisión, latencia y uso de recursos para todos los modelos.
+
+- **audio_generator.ipynb**
+  Notebook para crear y preprocesar el de audio de prueba.
+
+- **model_tests.ipynb**
+  Ejecución automatizada de la toma de datos conectándose al broker de MQTT y creando un archivo con los resultados de  los modelos que  se guarda  en la carpeta Results.
+
+- **model_processing.ipynb**
+  Scripts de Python para procesar los  resultados obtenidos de   cada  modelo calculado las  métricas y guardando los  resultados en la tabla `general_metrics.csv`.
+
+- **final_processing.ipynb**
+  Pipeline que toma todos los resultados parciales, genera gráficas comparativas y tablas resumen para el informe.
+
+## Carpeta de  resultados
