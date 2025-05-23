@@ -99,4 +99,3 @@ La carpeta `testing/` agrupa todos los recursos necesarios para validar los mode
 - **final_processing.ipynb**
   Pipeline que toma todos los resultados parciales, genera gráficas comparativas y tablas resumen para el informe.
 
-## Carpeta de  resultados
